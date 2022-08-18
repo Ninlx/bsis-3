@@ -67,6 +67,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 75% !important;
+  }
+}
+
 .cstm__hdng {
   font-weight: bolder;
   color: red;
