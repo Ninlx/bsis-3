@@ -30,15 +30,15 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 1.75em;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #222;
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: antiquewhite;
+  background-color: transparent;
 }
 
 input[type="date"]::-webkit-inner-spin-button,
@@ -49,6 +49,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 @media screen and (max-width: 450px) {
   .container {
     width: 95% !important;
+  }
+
+  .header {
+    padding: 1.5em 0;
+  }
+
+  .row > div:not(:last-child) {
+    padding-bottom: 1.5em;
+  }
+
+  .header__button {
+    width: 100% !important;
   }
 }
 
@@ -85,4 +97,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .cstm__hr {
   margin-top: 3em !important;
+}
+
+/* custom classes */
+.my {
+  margin: 2em 0 1.5em 0;
 }
